@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Substitua "@drawable/ic_edit" pelo seu ícone de editar -->
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <ImageView
+        android:id="@+id/deleteIcon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_toStartOf="@id/editIcon"
+        android:onClick="onDeleteClick"
+        android:src="@drawable/ic_delete" /> <!-- Substitua "@drawable/ic_delete" pelo seu ícone de excluir -->
+
+</FrameLayout>
